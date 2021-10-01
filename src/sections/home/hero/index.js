@@ -12,28 +12,28 @@ const Hero = ()=> {
       role="hero section"
       className="relative"
     >
-      <ul className="absolute bottom-0 md:top-1/3 right-4 text-3xl text-tertiary z-10">
-        <li className="mb-4">
+      <ul className="absolute bottom-20 md:top-1/3 right-6 text-3xl text-primary z-10">
+        <li className="mb-4 hover:text-primary-light transition-all">
           <a href="https://www.linkedin.com/in/felix4dev" rel="noreferrer" target="_blank">
             <AiFillLinkedin />
           </a>
         </li>        
-        <li className="mb-4">
+        <li className="mb-4 hover:text-primary-light transition-all">
           <a href="https://github.com/felixTineo" rel="noreferrer" target="_blank">
             <AiFillGithub />
           </a>
         </li>                        
-        <li className="mb-4">
+        <li className="mb-4 hover:text-primary-light transition-all">
           <a href="https://twitter.com/Felix4dev" rel="noreferrer" target="_blank">
             <AiFillTwitterSquare />
           </a>
         </li>        
-        <li className="mb-4">
+        <li className="mb-4 hover:text-primary-light transition-all">
           <a href="https://www.instagram.com/felixrtineo/" rel="noreferrer" target="_blank">
             <AiFillInstagram />
           </a>
         </li>                        
-        <li className="mb-4">
+        <li className="mb-4 hover:text-primary-light transition-all">
           <a href="https://felixtineo05.medium.com/" rel="noreferrer" target="_blank">
             <AiFillMediumSquare />
           </a>
