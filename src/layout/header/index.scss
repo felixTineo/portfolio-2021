@@ -1,0 +1,32 @@
+.header-nav-item{
+  @apply inline-flex;
+  @apply md:flex;
+  justify-content: center;
+  @apply items-end;
+  @apply md:items-center;
+  flex-direction: column;
+  div{
+    height: 3px;
+    width: 0;
+    @apply bg-secondary;
+    @apply transition-all;
+  }
+  &:hover{
+    div{
+      width: 100%;
+    }
+  }
+}
+
+.burger .burger-lines,
+.burger .burger-lines:after,
+.burger .burger-lines:before {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.burger.burger-arrow.open .burger-lines,
+.burger.burger-arrow.open .burger-lines:after,
+.burger.burger-arrow.open .burger-lines:before
+{
+  @apply bg-secondary;
+}

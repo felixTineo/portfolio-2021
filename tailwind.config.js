@@ -5,6 +5,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        'heading': 'Oswald',
+        'base': 'Quattrocento'
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -14,7 +18,7 @@ module.exports = {
           dark: '#0092b3'
         },
         secondary: {
-          light: '#ef8fa6',
+          light: '#ec7994',
           DEFAULT: '#e86180',
           dark: '#e2365e'
         },
@@ -27,24 +31,30 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+    },
   },
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
-        'h1': { fontSize: theme('fontSize.3xl'), fontFamily: "Oswald" },
-        'h2': { fontSize: theme('fontSize.2xl'), fontFamily: "Oswald" },
-        'h3': { fontSize: theme('fontSize.xl'), fontFamily: "Oswald" },
+        'h1': { fontSize: theme('fontSize.5xl'), fontFamily: "Oswald", lineHeight: "5rem", },
+        'h2': { fontSize: theme('fontSize.4xl'), fontFamily: "Oswald", lineHeight: "4rem", },
+        'h3': { fontSize: theme('fontSize.3xl'), fontFamily: "Oswald", lineHeight: "3rem", },
         'html': {
           backgroundColor: "#000",
           scrollBehavior: "smooth",
-          fontSize: "18px",
+          fontSize: "16px",
         },
         'body': {
           color: "#E4F1FE",
           fontFamily: "Quattrocento",
-          letterSpacing: "4px",
-          lineGeight: "2rem",
+          letterSpacing: "2px",
+          lineHeight: "2rem",
+        },
+        'button':{
+          letterSpacing: "2px",
+          lineHeight: "2rem",
         }
       })
     })

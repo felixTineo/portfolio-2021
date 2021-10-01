@@ -5,7 +5,7 @@ const Footer = ()=> {
 
   return(
     <footer>
-      <div className="bg-primary text-black">
+      <div className="bg-secondary text-black">
         <Container>
           <div className="flex items-center justify-between text-sm">
             <span>
